@@ -7,15 +7,42 @@
     <style>
         *, *::before, *::after {box-sizing: border-box;}
 
-        .wrapper {
+
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+    .wrapper {
             display: grid;
-            grid-template-columns:1fr 2fr 1fr;  /* 3 columns with middle grid being twice as wide */
+            grid-template-columns:1fr 2fr 1fr;    /* 3 columns with middle grid being twice as wide */
             grid-auto-rows:minmax(100px, auto);
             grid-gap:1em;}
 
         body, html {
         height: 100%;
 }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
     
     
     </style>
@@ -31,5 +58,8 @@
         <div class="box3" style="background-color:lightgreen;">Box3</div>
         <div class="box4" style="height:auto; width:auto; background-color:lightskyblue;">Box4</div>
     </div>
+    <div class="footer" style="border:1px solid black; height:200px; background-color:peachpuff;">
+        footer
+ </div>
 </body>
 </html>

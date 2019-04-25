@@ -1,0 +1,39 @@
+*, *::before, *::after {box-sizing: border-box;}
+
+body, html {
+    height: 100%;}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+}
+    
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+    
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    
+    .wrapper {
+        display: grid;
+        grid-template:
+        'canvas1 intro'
+        'canvas1 control1' /1fr 1fr;
+        grid-gap: 10px;
+        background-color: red;
+        padding: 10px;}
+    
+    .wrapper > .intro {
+            grid-column: 2;
+            grid-row: 1; /* NEW */
+          }
+
+    .wrapper > .control1 {
+            grid-column: 2;
+            grid-row: 2; /* NEW */
+          }
+}
+    
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}

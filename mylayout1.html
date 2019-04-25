@@ -3,20 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mylayout1.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        *, *::before, *::after {box-sizing: border-box;}
-
-        .wrapper {
-            display: grid;
-            grid-template-columns:1fr 2fr 1fr;  /* 3 columns with middle grid being twice as wide */
-            grid-auto-rows:minmax(100px, auto);
-            grid-gap:1em;}
-
-        body, html {
-        height: 100%;
-}
-    
     
     </style>
     <title>Document</title>
@@ -26,10 +14,12 @@
            header
     </div>
     <div class="wrapper">
-        <div class="box1" style="height:auto; background-color:orange;">Box1</div>
-        <div class="box2" style="height:auto; background-color:yellow;">Box2</div>
-        <div class="box3" style="background-color:lightgreen;">Box3</div>
-        <div class="box4" style="height:auto; width:auto; background-color:lightskyblue;">Box4</div>
+        <div class="intro" style="background-color:orange;">intro</div>
+        <div class="canvas1" style="background-color:yellow;">canvas1</div>
+        <div class="control1" style="background-color:lightgreen;">control1</div>
     </div>
+    <div class="footer" style="border:1px solid black; height:200px; background-color:peachpuff;">
+        footer
+ </div>
 </body>
 </html>
