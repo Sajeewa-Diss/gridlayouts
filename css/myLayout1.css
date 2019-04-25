@@ -16,12 +16,9 @@ body {
 }
 
 .header {
-    /* position: absolute; */
     justify-content: center;
     align-items: center;
     text-align: center;
-    left:0;
-    /* float:right; */
     padding: 20px;
     color: #aaaaaa;
     width:100%;
@@ -349,19 +346,17 @@ input[type=range] {
 
 @media only screen and (max-width: 850px) 
 {
+    .header, .footer{
+        min-width: 800px;
+        max-width: 800px;
+    }
+
     div.intro{
         /* min-width: 800px; */
         padding-left: 1rem;
         left: 0;
         transform: translateX(0);
     }
-
-    /* div.controls{
-        position: relative;
-        padding-left: 1rem;
-        left: 0;
-        transform: translateX(0);
-    } */
 
     div.canvaswrap{
         position: relative;
