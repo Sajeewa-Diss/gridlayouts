@@ -304,11 +304,11 @@ input[type=range] {
 }
     
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1360px) {
     
     .wrapper {
         display: grid;
-        grid-template-columns: 600px auto;
+        grid-template-columns: 550px auto;
         grid-gap: 10px;
         background-color: red;
         padding: 10px;}
