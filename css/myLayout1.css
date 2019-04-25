@@ -271,37 +271,16 @@ input[type=range] {
     }
 
 
+
 /* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-}
+/* @media only screen and (min-width : 480px) {
+} */
     
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-}
-
-@media only screen and (max-device-width: 800px) 
-{
-    div.intro{
-        /* display: inline-block; */
-        min-width: 800px;
-    }
-}
+/* @media only screen and (min-width : 768px) {
+} */
 
 
-@media only screen and (max-width : 1359px) {
-    div.intro, div.controls{
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    div.canvaswrap{
-        /* margin-left: 10vmin */
-        position: relative;
-        left: 20%;
-        transform: translate(-5%);
-    }
-}
     
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 1360px) {
@@ -334,3 +313,50 @@ input[type=range] {
 /* Large Devices, Wide Screens */
 /* @media only screen and (min-width : 1200px) {
 } */
+@media only screen and (max-width: 1359px) 
+{
+    div.intro{
+        min-width: 800px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    div.controls{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    div.canvaswrap{
+        position: relative;
+        left: 20%;
+        transform: translate(-5%);
+    }
+}
+
+
+@media only screen and (max-width: 850px) 
+{
+    div.intro{
+        /* min-width: 800px; */
+        padding-left: 1rem;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    /* div.controls{
+        position: relative;
+        padding-left: 1rem;
+        left: 0;
+        transform: translateX(0);
+    } */
+
+    div.canvaswrap{
+        position: relative;
+        padding-left: 1rem;
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
